@@ -117,6 +117,7 @@ color: rgb(255, 196, 0) !important;
     overflow: visible !important;
 }
 .carouselContainer {
+    padding-top: 20px;
     overflow: hidden !important;
 }
 

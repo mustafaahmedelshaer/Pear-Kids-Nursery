@@ -1,10 +1,47 @@
 *{
     box-sizing: border-box;
+    font-family: 'Viaoda Libre', cursive;
 }
 
-body{
-    background-color: #fff
+/* Scroll Bar */
+html {
+    --scrollbarBG: rgb(240, 240, 240);
+    --thumbBG: orange;
+  }
+  body::-webkit-scrollbar {
+    width: 20px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+/*General*/
+
+section h1{
+    letter-spacing: 3px !important;
+ }
+ p{
+     color: rgb(124, 124, 124);
+ }
+ .sectionName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
+.sectionName span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+/* Nav Bar*/
+/* Social iCons */
 .socialicons a{
     color: orange !important;
 }
@@ -13,18 +50,13 @@ body{
     text-decoration: none;
 }
 
-section h1{
-   letter-spacing: 3px !important;
-}
-p{
-    color: rgb(124, 124, 124);
-}
 
 /* HOme */
 #Home{
     position: relative;
     background-color: rgb(238, 238, 238);
     max-height: 100vh;
+
     /* Curvy Background */
 
     -webkit-mask:
@@ -47,10 +79,7 @@ p{
     z-index: 1;
     
 }
-.sectionName{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-}
+
 .HomeCaption{
     font-size: 4rem;
     font-weight: 900;
@@ -188,7 +217,6 @@ color: rgb(255, 196, 0) !important;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    border-radius: 30%;
 
   }
 
@@ -196,7 +224,7 @@ color: rgb(255, 196, 0) !important;
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 1px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
 
   }

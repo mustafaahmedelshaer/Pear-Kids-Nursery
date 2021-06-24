@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff
+}
+section h1{
+   letter-spacing: 3px !important;
+}
+p{
+    color: rgb(124, 124, 124);
+}
+
+/* HOme */
+#Home{
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    max-height: 100vh;
+    /* Curvy Background */
+
+    -webkit-mask:
+    radial-gradient(var(--r1,130%) var(--r2,80%) at top   ,white 79.5%,transparent 80%) top left,
+    radial-gradient(var(--r1,160%) var(--r2,60%) at bottom,transparent 79.5%,white 80%) top center,
+    radial-gradient(var(--r1,130%) var(--r2,80%) at top   ,white 79.5%,transparent 80%) top right;
+  mask:
+    radial-gradient(var(--r1,100%) var(--r2,10%) at top   ,white 79.5%,transparent 80%) top left,
+    radial-gradient(var(--r1,100%) var(--r2,10%) at bottom,transparent 79.5%,white 80%) top center,
+    radial-gradient(var(--r1,100%) var(--r2,10%) at top   ,white 79.5%,transparent 80%) top right;
+   /* adjust the 150% to control the covered area, the bigger the value the bigger the area will be*/
+  -webkit-mask-size:33.4% 150%;
+  -webkit-mask-repeat:no-repeat;
+  mask-size:33.4% 150%;
+  mask-repeat:no-repeat;
+}
+.HomeHeader{
+    position: absolute;
+    left: 33%;
+    z-index: 1;
+    
+}
+.sectionName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.HomeCaption{
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(167, 164, 164, 0.5);
+    text-shadow: 14px 16px #7575751a;
+
+}
+
+/*smart programs*/
+
+.pricecaption {
+    line-height: 2.5;
+}
+.oneprogram{
+    background-color: rgb(243, 243, 243) !important;
+    border-radius: 5%;
+    border: dashed 0.5px rgba(0, 0, 0, 0.253);
+    transition: transform 500ms ease-in-out 25ms;
+
+}
+.oneprice .dolar {
+        font-size: 3rem;
+        font-weight: 800;
+    position: absolute;
+    top: 1px;
+
+}
+.oneprogram:hover{
+    transform: translateX(0px) translateY(-30px);
+    border: dashed chartreuse;
+
+}
+.oneprogram:hover h4{
+color: rgb(255, 196, 0) !important;
+}
+.oneprogram:hover .btn-success{
+    background-color: rgb(255, 196, 0) !important;
+    border: none;
+    }
+  
+/* Why Choos us*/
+.secHeader{
+    font-weight: 900;
+}
+/* Activites */
+.iconDiv{
+    border: dashed 2px orange;
+    background-color: palegreen;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    color: rgb(141, 3, 3);
+
+} 
+/*testimonial*/
+
+
+/* testimonialimg */
+
+
+.testimonial {
+    background-color: white;
+    overflow: visible !important;
+}
+
+.testimonialimg {
+    position: absolute;
+    bottom: 75%;
+    left: 43%;
+    width: 130px;
+}
+
+
+.Carouselleft{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transition: all 0.5;
+}
+.Carouselleft:hover{
+    font-weight: 900;
+}
+.Carouselright{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transition: all 0.5;
+}
+.Carouselright:hover{
+    font-weight: 900;
+}
+
+.indicators-test
+{
+    background-color: grey !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+
+.indicators-test.active {
+    background-color: cyan !important;
+}
+.carousel-indicators  {
+    top: 105%;
+}
+.carouselIcon {
+    font-size: 2rem;
+    color: gray;
+    transition: all 0.5s;
+}
+.carouselIcon:hover {
+    font-size: 2.1rem;
+    color: cyan;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .HomeHeader{
+        position: relative;
+        left:auto
+        
+    }
+    .carousel-caption .font-big {
+        font-size: 4rem;
+    }
+
+    .testimonialimg {
+        width: 120px;
+        bottom: 80%;
+        left: 35%;
+    }
+    .servicesiconbg{
+        color: white;
+        position:absolute;
+        bottom:53%;
+        left: 46%;
+    }
+  }

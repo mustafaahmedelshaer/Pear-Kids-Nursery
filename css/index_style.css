@@ -5,6 +5,14 @@
 body{
     background-color: #fff
 }
+.socialicons a{
+    color: orange !important;
+}
+.socialicons a:hover{
+    color: green !important;
+    text-decoration: none;
+}
+
 section h1{
    letter-spacing: 3px !important;
 }
@@ -162,6 +170,77 @@ color: rgb(255, 196, 0) !important;
     font-size: 2.1rem;
     color: cyan;
 }
+
+/*gallery*/
+.gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 30%;
+
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 5%;
+
+  }
+/*Contact*/
+
+
+
+.contactheader {
+    font-weight: 800;
+}
+
+.contactheader::before {
+    content: "G";
+    position: absolute;
+    left:0%;
+    bottom: -10%;
+    font-size: 4rem;
+    color: rgba(5, 5, 5, 0.1);
+}
+
+
+input {
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 50px;
+    border: 2px solid #eee;
+}
+
+textarea {
+    display: block;
+    width: 70%;
+    height: 100px;
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 1300px) {

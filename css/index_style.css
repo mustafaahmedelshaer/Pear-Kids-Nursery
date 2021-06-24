@@ -205,6 +205,13 @@ color: rgb(255, 196, 0) !important;
 }
 
 /*gallery*/
+#gallery{
+    background-image: url(../imgs/product_bg.png);
+    background-repeat: repeat;
+    background-position: 50% -6px;
+    padding-top: 78px;
+    background-attachment: fixed;
+}
 .gallery{
         display: flex;
         justify-content: center;
@@ -216,10 +223,11 @@ color: rgb(255, 196, 0) !important;
 .swiper-container {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
 
   }
-
+.swiper-wrapper{
+    height: 80%;
+}
   .swiper-slide {
     background-position: center;
     background-size: cover;

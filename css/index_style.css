@@ -116,6 +116,9 @@ color: rgb(255, 196, 0) !important;
     background-color: white;
     overflow: visible !important;
 }
+.carouselContainer {
+    overflow: hidden !important;
+}
 
 .testimonialimg {
      width: 130px;

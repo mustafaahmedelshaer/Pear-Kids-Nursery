@@ -42,6 +42,22 @@ section h1{
 
 /* Nav Bar*/
 /* Social iCons */
+#navbarSupportedContent ul li a {
+    color: black !important;
+    border-bottom: dashed 0.5px orange;
+    border-top: dashed 0.5px orange;
+    margin-left: 10px;
+}
+
+#navbarSupportedContent ul li a:hover{
+    color: orange !important;
+    border-bottom: dashed 0.5px rgb(10, 9, 6);
+    border-top: dashed 0.5px black;
+    margin-left: 10px;
+}
+
+
+
 .socialicons a{
     color: orange !important;
 }
@@ -82,9 +98,10 @@ section h1{
 
 .HomeCaption{
     font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     color: rgba(167, 164, 164, 0.5);
-    text-shadow: 14px 16px #7575751a;
+    text-shadow: 10px 10px #7575751a;
 
 }
 

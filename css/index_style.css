@@ -7,6 +7,8 @@
 html {
     --scrollbarBG: rgb(240, 240, 240);
     --thumbBG: orange;
+  scroll-behavior: smooth;
+
   }
   body::-webkit-scrollbar {
     width: 20px;
